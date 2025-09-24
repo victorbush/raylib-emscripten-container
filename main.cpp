@@ -1,3 +1,5 @@
+#include <stdexcept>
+
 #include "raylib.h"
 #include "raymath.h"
 
