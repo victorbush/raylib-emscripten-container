@@ -1,0 +1,7 @@
+*.exe
+*.ilk
+*.pdb
+*.html
+*.js
+*.wasm
+*.data

@@ -1,0 +1,13 @@
+{
+    "image": "emscripten/emsdk:latest",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.live-server",
+                "ms-vscode.simple-browser"
+            ]
+        }
+    },
+    "postCreateCommand": "apt update && apt install -y ninja-build && cmake -S . -B build -G Ninja -DPLATFORM=Web \"-DCMAKE_TOOLCHAIN_FILE=/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake\""
+}
